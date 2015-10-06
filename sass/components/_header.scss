@@ -1,0 +1,32 @@
+// Header for BottleSTYleezz
+
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 8rem;
+	border-top: 1rem solid $where-iz-bottle;
+	background: rgba($where-iz-bottle,0.65);
+	z-index: 5;
+	display: flex;
+	align-items: stretch;
+
+	.logo {
+		flex: 3;
+	}
+
+	.trigger {
+		flex: 1;
+
+		button {
+			text-align: right;
+		}
+	}
+
+	a, button {
+		padding: 2rem;
+		display: block;
+	}
+}

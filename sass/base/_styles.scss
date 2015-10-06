@@ -1,0 +1,37 @@
+// Base styles for BottleStlyez
+
+html { font-size: 62.5%; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1.4rem;
+	font-family: $proxima-nova;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $atrament;
+	line-height: 1.625rem;
+	margin: 0;
+}
+
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+
+a:link, a:visited {
+	color: $prs;
+}
+
+a:hover, a:active {
+	color: $vie;
+}
+
+button {
+	font-family: Helvetica;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: 0;
+	border: 0;
+}

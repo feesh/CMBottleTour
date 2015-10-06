@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CreativeBottles</title>
+
+		<script src="https://use.typekit.net/nku5kzy.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bottlestylez.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+		<!-- Include in the head of the document plz -->
+		<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="logo">
+					<h1><a href="#">CM BottleTour</a></h1>
+				</div>
+				<div class="trigger">
+					<button id="trigger-overlay" type="button"><span class="fa fa-bars">Menu</span></button>
+				</div>
+			</header>
+			<div id="map"></div>
+		</div><!-- /container -->
+
+		<!-- open/close -->
+		<div class="overlay overlay-slidedown">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- place at end of body -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu-overlay.js"></script>
+		<script>
+		L.mapbox.accessToken = 'pk.eyJ1Ijoic2FkYnVtYmxlYmVlIiwiYSI6ImVCdE9rY28ifQ.iQDg2GpQ5YsZzn4b029Auw';
+		var map = L.mapbox.map('map', 'sadbumblebee.a8f9ad10', { zoomControl: false })
+		    .setView([23.8054, -83.8477], 3);
+		new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+		</script>
+	</body>
+</html>
