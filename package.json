@@ -1,0 +1,31 @@
+{
+  "name": "cmbottletour",
+  "version": "1.0.0",
+  "description": "Map tracker page for a CreativeMornings message in a bottle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feesh/CMBottleTour.git"
+  },
+  "keywords": [
+    "CreativeMornings",
+    "map",
+    "mapbox",
+    "creativecoding"
+  ],
+  "author": "#cmoak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feesh/CMBottleTour/issues"
+  },
+  "homepage": "https://github.com/feesh/CMBottleTour#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

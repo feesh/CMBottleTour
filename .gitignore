@@ -1,0 +1,8 @@
+config.codekit
+sass/.sass-cache/*
+
+# Compiled CSS
+css/*
+
+# Dependency directory
+node_modules
